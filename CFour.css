@@ -1,0 +1,488 @@
+
+/*   -------------------------------------- nav bar------------------------------------------------------------------------------ */
+.navbar-fixed-top {
+    left: 187px;
+}
+.list-item {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    padding-top: 60px;
+    margin: 20px;
+    color: black;
+    letter-spacing: 0.3px;
+}
+li.list-item:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0%;
+    bottom: 10px;
+    left: 0;
+    transition: 0.4s;
+}
+.list-item:hover{
+	color:black;
+}
+.list-item:hover:after{
+	width: 98%;
+}
+button.btn {
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ffa500bf;
+    color: #ffa500bf;
+    background: white;
+    margin-top: 75px;
+    width: 150;
+    font-weight: 600;
+}
+button.btn:hover{
+	color:orange;
+	border-color: orange;
+} 
+/* -------------------------------------------------------------------- hero section    -----------------------------------------------  */
+.col-md-6 img{
+   position: absolute;
+    left: -92px;
+    top: -15px;
+    height: 530px;
+    width: 857px;
+}
+.col-md-6 h1 {
+	margin-top: -4px;
+    font-size: 51px;
+    font-weight: 550;
+    color: #254369;
+    font-family: sans-serif;
+}
+.col-md-6 p {
+    font-family: inherit;
+    font-style: normal;
+    line-height: 144%;
+    font-size: 19px;
+    letter-spacing: 0.01em;
+    color: #7c7c7d;
+}
+.col-md-6 ul li{
+	font-family: inherit;
+    font-style: normal;
+    line-height: 144%;
+    font-size: 19px;
+    letter-spacing: 0.01em;
+    color: #7c7c7d;
+    margin-left: -21px;
+}
+.btn1{
+    border-radius: 44px;
+    border-style: none;
+    background: #44a391;
+    font-size: 19px;
+    font-weight: 550;
+    color:white;
+    padding: 9px 24px;
+    margin-left: -6px;
+    margin-top: -25px;
+ }
+/* ------------------------------------------------------------------------------- 3container --------------------------------------------------- */
+
+.container .col-md-3{
+    padding: 76px 25px;
+    margin-left: 24px;
+    box-shadow: 2px 2px 2px 2px  #e1dbdb;
+    padding-left: 71px;
+    width: 366px;
+}
+.container .col-md-3 h2{
+    padding-top: 20px;
+
+    color: #4a4646;
+
+}
+.container .col-md-3 p{
+    padding-top: 12px;
+    color:#7c7c7d ;
+    font-size: 19px;
+
+}
+.btn2 {
+   border-style: none;
+    background-color: #44a391;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    margin-top: 40px;
+}
+/*  --------------------------------------------------------------------------------table with grid-----------------------------------------*/ 
+.why{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing: 2px;
+    font-size: 45px;
+    color: #1E4164
+
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "nav nav header header"
+                          "maina contentb menuc containd"
+                          "maine contentf menug containh"
+                          "maini contentj menuk containl"
+                          "mainm contentn menuo containp"
+                          "mainq contentr menux contains"
+                          "maint contentu menuv containw";
+    
+     grid-template-columns: 65px 450px 65px 450px;  
+     padding-left: 70px;                   
+                           
+}
+
+.grid-item1{
+    padding: 25px;
+    grid-area: nav;
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391;
+
+}
+.grid-item2{
+    padding: 25px;
+    grid-area: header;
+    color: #356f84;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+.grid-item3{
+    padding: 10px;
+    border-bottom: 2px solid #82c4b8;
+    grid-area: maina;
+    background-color: #44a391;
+    align-content: center;
+    height: 130px;
+}
+.grid-item4{
+    border-bottom: 2px solid #82c4b8;
+    padding: 25px;
+    height: 130px;
+    grid-area: contentb;
+    color: #fbfbfb;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391
+}
+.grid-item5{
+   height: 130px;
+    border-bottom: 2px solid silver;
+    padding-top: 29px;
+    padding-left: 21px;
+    grid-area: menuc;
+    background-color: #f7f7f7;
+}
+.grid-item6{
+   height: 130px;
+    border-bottom: 2px solid silver;
+    padding: 25px;
+    grid-area: containd;
+    color: #786969;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+.grid-item7{
+     padding: 10px;
+    border-bottom: 2px solid #82c4b8;
+    grid-area: maine;
+    background-color: #44a391;
+    align-content: center;
+    height: 130px;
+}
+.grid-item8{
+       border-bottom: 2px solid #82c4b8;
+    padding: 25px;
+    height: 130px;
+    grid-area: contentf;
+    color: #fbfbfb;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391
+}
+.grid-item9{
+     height: 130px;
+    border-bottom: 2px solid silver;
+    padding-top: 29px;
+    padding-left: 21px;
+    grid-area: menug;
+    background-color: #f7f7f7;
+}
+.grid-item10{
+    height: 130px;
+    border-bottom: 2px solid silver;
+    padding: 25px;
+    grid-area: containh;
+    color: #786969;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+.grid-item11{
+    padding: 10px;
+    border-bottom: 2px solid #82c4b8;
+    grid-area: maini;
+    background-color: #44a391;
+    align-content: center;
+    height: 130px;
+}
+.grid-item12{
+       border-bottom: 2px solid #82c4b8;
+    padding: 25px;
+    height: 130px;
+    grid-area: contentj;
+    color: #fbfbfb;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391
+}
+.grid-item13{
+     height: 130px;
+    border-bottom: 2px solid silver;
+    padding-top: 29px;
+    padding-left: 21px;
+    grid-area: menuk;
+    background-color: #f7f7f7;
+}
+.grid-item14{
+    height: 130px;
+    border-bottom: 2px solid silver;
+    padding: 25px;
+    grid-area: containl;
+    color: #786969;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+.grid-item15{
+    padding: 10px;
+    border-bottom: 2px solid #82c4b8;
+    grid-area: mainm;
+    background-color: #44a391;
+    align-content: center;
+    height: 130px;
+}
+.grid-item16{
+    border-bottom: 2px solid #82c4b8;
+    padding: 25px;
+    height: 130px;
+    grid-area: contentn;
+    color: #fbfbfb;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391
+}
+.grid-item17{
+     height: 130px;
+    border-bottom: 2px solid silver;
+    padding-top: 29px;
+    padding-left: 21px;
+    grid-area: menuo;
+    background-color: #f7f7f7;
+}
+.grid-item18{
+    height: 130px;
+    border-bottom: 2px solid silver;
+    padding: 25px;
+    grid-area: containp;
+    color: #786969;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+.grid-item19{
+    padding: 10px;
+    border-bottom: 2px solid #82c4b8;
+    grid-area: mainq;
+    background-color: #44a391;
+    align-content: center;
+    height: 130px;
+}
+.grid-item20{
+        border-bottom: 2px solid #82c4b8;
+    padding: 25px;
+    height: 130px;
+    grid-area: contentr;
+    color: #fbfbfb;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391
+}
+.grid-item21{
+     height: 130px;
+    border-bottom: 2px solid silver;
+    padding-top: 29px;
+    padding-left: 21px;
+    grid-area: menux;
+    background-color: #f7f7f7;
+}
+.grid-item22{
+   height: 130px;
+    border-bottom: 2px solid silver;
+    padding: 25px;
+    grid-area: contains;
+    color: #786969;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+.grid-item23{
+    padding: 10px;
+    border-bottom: 2px solid #82c4b8;
+    grid-area: maint;
+    background-color: #44a391;
+    align-content: center;
+    height: 130px;
+}
+.grid-item24{
+        border-bottom: 2px solid #82c4b8;
+    padding: 25px;
+    height: 130px;
+    grid-area: contentu;
+    color: #fbfbfb;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #44a391
+}
+.grid-item25{
+     height: 130px;
+    border-bottom: 2px solid silver;
+    padding-top: 29px;
+    padding-left: 21px;
+    grid-area: menuv;
+    background-color: #f7f7f7;
+}
+.grid-item26{
+   height: 130px;
+    border-bottom: 2px solid silver;
+    padding: 25px;
+    grid-area: containw;
+    color: #786969;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 550;
+    background-color: #f7f7f7;
+}
+
+/*     -----------------------------------------------------------------------------  logo ---------------------------------------------------------------------   */
+
+.heading{
+    margin-top: 27px;
+    margin-bottom: -4px;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing: 2px;
+    color: #1E4164;
+    font-size: 36px;
+}
+/*   -------------------------------------------------------------------------------email sign in ------------------------------------------------------------------*/
+
+#email{
+    margin-bottom: 50px;
+    border-style: none;
+    background-color: #e2e8e8;
+    width: 459px;
+    height: 46px;
+}
+.btn4{
+    border-style: none;
+    background: #26ac93;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 15px 50px;
+}
+/* ----------------------------------------------- latest news----------------------------------------------------------------- */
+#container3 img{
+    border-radius: 6px;
+    margin-left: -71px;
+    margin-top: -76px;
+    width: 368px;
+    margin-bottom:20px;
+}
+#container3 a{
+    text-decoration: none;
+}
+#container4 img{
+    border-radius: 6px;
+    margin-left: -71px;
+    margin-top: -76px;
+    width: 368px;
+    margin-bottom:20px;
+}
+#container4 a{
+    text-decoration: none;
+}
+
+.contain{
+    text-decoration: none;
+    color: gray;
+
+
+}
+/*                                       --------------------------background-img log in---------------------------------------------------------------- */
+.why2
+{   
+    margin-top: 23px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 550;
+    font-size: 39px;
+    color: #1E4164
+}
+.why3{
+    text-align: center;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 111%;
+    color: #1E4164;
+}
+/*---------------------------------------------------------------------blue bg----------------------------------------------------------------------------*/
+#email2
+{
+    position: relative;
+    top: 100px;
+    left: -191px;
+    border-radius: 9px;
+    padding: 12px;
+    border-width: 3px;
+    border-color: #44a391;
+}
+.btn3{
+    position: relative;
+    top: 100;
+    left: -239;
+    color: white;
+    background: #44a391;
+    border-style: none;
+    border-radius: 27px;
+    padding: 13px 30px 13px 30px;
+}
